@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1fadeaea.chunk.css",
+    "main.js": "/static/js/main.fa3a0474.chunk.js",
+    "main.js.map": "/static/js/main.fa3a0474.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.958b4628.js",
+    "runtime-main.js.map": "/static/js/runtime-main.958b4628.js.map",
+    "static/css/2.fe708519.chunk.css": "/static/css/2.fe708519.chunk.css",
+    "static/js/2.e6b71883.chunk.js": "/static/js/2.e6b71883.chunk.js",
+    "static/js/2.e6b71883.chunk.js.map": "/static/js/2.e6b71883.chunk.js.map",
+    "static/js/3.2e2db951.chunk.js": "/static/js/3.2e2db951.chunk.js",
+    "static/js/3.2e2db951.chunk.js.map": "/static/js/3.2e2db951.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.fe708519.chunk.css.map": "/static/css/2.fe708519.chunk.css.map",
+    "static/css/main.1fadeaea.chunk.css.map": "/static/css/main.1fadeaea.chunk.css.map",
+    "static/js/2.e6b71883.chunk.js.LICENSE.txt": "/static/js/2.e6b71883.chunk.js.LICENSE.txt",
+    "static/media/BOMB Generic Layout.aa2324eb.png": "/static/media/BOMB Generic Layout.aa2324eb.png",
+    "static/media/App.css": "/static/media/PipelineHeader.3a2e1299.jpg",
+    "static/media/home6.66196303.png": "/static/media/home6.66196303.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.958b4628.js",
+    "static/css/2.fe708519.chunk.css",
+    "static/js/2.e6b71883.chunk.js",
+    "static/css/main.1fadeaea.chunk.css",
+    "static/js/main.fa3a0474.chunk.js"
+  ]
+}

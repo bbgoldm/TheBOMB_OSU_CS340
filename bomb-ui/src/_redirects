@@ -1,0 +1,15 @@
+/Tanks https://bomb-mysql.herokuapp.com/Tanks   200
+/TankTypes https://bomb-mysql.herokuapp.com/TankTypes 200
+/Tasks https://bomb-mysql.herokuapp.com/Tasks 200
+/Lineups https://bomb-mysql.herokuapp.com/Lineups 200
+/Materials https://bomb-mysql.herokuapp.com/Materials 200
+/Specifications https://bomb-mysql.herokuapp.com/Specifications 200
+/Tests https://bomb-mysql.herokuapp.com/Tests 200
+
+
+[[redirects]]
+  from = "/*"
+  to = "https://bomb-mysql.herokuapp.com/:splat"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}

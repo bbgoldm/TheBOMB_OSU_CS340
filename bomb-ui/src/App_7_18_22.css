@@ -1,0 +1,206 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #44318D;  
+  color: rgb(245, 242, 238);
+  margin: 5%;
+  padding: 10px;
+}
+
+h2 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h3{
+  font-style: italic;
+}
+
+p {
+  font-size: (20px + 2vmax)
+}
+
+header h1{
+  background-color: #D83F87;
+  border-style: groove;
+  padding-left: 10px;
+  padding-right: 15px;
+  font-family: 'Rock Salt', cursive;
+  display: inline;
+  font-size: (10px + 3vmax);
+}
+
+hr {
+  border: 3px solid #D83F87;
+}
+
+input select {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #A4B3B6;
+  color: bisque;
+  margin: 5%;
+  padding: 10px;
+}
+
+button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2A1B3D;
+  border-color: #D83F87;
+  border-width: 4px;
+  margin: 5%;
+  padding: 10px;
+}
+
+a {
+  color:rgb(245, 242, 238);
+  font-size: 2vmin;
+}
+a:hover {
+  display: inline-block;
+}
+
+button {
+  color:rgb(245, 242, 238);
+  font-size: 2vmin;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  min-height: 6vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #2A1B3D;
+  background-color: #5F6366;
+  border: 1px solid black;
+}
+
+.App-logo{
+  width: 40vmin;
+}
+
+.App-link {
+  color: #61dafb;
+  border: 20px;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #c3d3d6;}
+tr:nth-child(odd){background-color: #a8b3b6;}
+
+tr:hover {
+  background-color: #D83F87;
+}
+
+tr th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  background-color: #D83F87;
+  color: rgb(245, 242, 238);
+}
+
+tr td{
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: left;
+  color: rgb(14, 15, 16);
+}
+
+/*  BBG commented out since these are specific children for old project
+tr td:nth-child(2), td:nth-child(3) {
+  text-align: right;
+}
+
+tr td:nth-child(4), td:nth-child(5), td:nth-child(6), td:nth-child(7), td:nth-child(8) {
+  text-align: center;
+}
+*/
+
+.icon {
+  font-size: 150%;
+  text-align: center;  /*  BBG added to center icons */
+}
+
+input, label {
+  display:block;
+}
+
+.editField{
+  display: inline-block;
+  margin-right:20px;
+}
+
+.labelAndInput{
+  display: inline-block
+}
+
+.navbarheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border: 1px solid black;
+  position: relative;
+  background-image: url(./static/PipelineHeader.jpg);
+  background-size: cover;
+  background-position-y: center;
+}
+.navbarheader .header-left {
+  margin-left: -0.5rem;
+  flex: 2;
+}
+.navbarheader .header-title {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+.navbarheader .header-right {
+  margin-right: -0.5rem;
+  flex: 2;
+}
+
+nav {
+  display: inline;
+}
+
+.createCancel {
+  display: flex;
+  justify-content: center;  /* BBG added */
+}
+
+.flex-left {
+  margin-right:100px;   /* BBG changed from 200 -> 100px */
+}
+
+
+
+/*---------BBG Additions-------------*/
+
+/* Center table on page */
+table{
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* Put nav icon on left and allow Header text to be centered */
+.navLeft, .navRight{
+  flex: 1;
+}
+
+/* Remove bullets from list */
+ul{
+  list-style-type: none;  
+}

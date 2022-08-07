@@ -1,0 +1,355 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #27556C;
+  color: #032536;
+  margin: 5%;
+  padding: 10px;
+}
+
+h2 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: #d1dce2;
+  /* bbg added */
+}
+
+h3 {
+  font-style: italic;
+}
+
+p {
+  font-size: (20px + 2vmax);
+  color: #d1dce2;
+}
+
+header h1 {
+  background-color: #6E91A1;
+  border-style: groove;
+  padding-left: 10px;
+  padding-right: 15px;
+  font-family: 'Rock Salt', cursive;
+  display: inline;
+  font-size: (10px + 3vmax);
+}
+
+header h4 {
+  background-color: #6E91A1;
+  border-style: groove;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+hr {
+  border: 3px solid #6E91A1;
+}
+
+input select {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #AA5039;
+  color: bisque;
+  margin: 5%;
+  padding: 10px;
+}
+
+button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #6E91A1;
+  border-color: #6E91A1;
+  border-width: 4px;
+  margin: 2%;
+  /*bbg changed from 5% to 2%*/
+  padding: 10px;
+}
+
+a {
+  color: #6E91A1;
+  font-size: 2vmin;
+}
+
+/* a:hover {
+  display: inline-block;
+} */
+
+button {
+  color: #d1dce2;
+  font-size: 2vmin;
+}
+
+button:hover {
+  color: #4e5194;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  min-height: 6vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #6E91A1;
+  background-color: #5F6366;
+  border: 1px solid black;
+}
+
+.App-logo {
+  width: 40vmin;
+}
+
+.App-link {
+  color: #032536;
+  border: 20px;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #c3d3d6;
+}
+
+tr:nth-child(odd) {
+  background-color: #a8b3b6;
+}
+
+tr:hover {
+  background-color: #6E91A1;
+}
+
+tr th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  background-color: #6E91A1;
+  color: #032536;
+}
+
+tr td {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: left;
+  color: #032536;
+}
+
+article {
+  text-align: left;
+}
+
+#articleDiv {
+  width: 60%;
+  margin: auto;
+}
+
+article > img {
+  text-align: center;
+  background-color: #d1dce2;
+}
+
+ol {
+  list-style-position: outside;
+}
+
+ol > li {
+  text-align: left;
+}
+
+/*  BBG commented out since these are specific children for old project
+tr td:nth-child(2), td:nth-child(3) {
+  text-align: right;
+}
+
+tr td:nth-child(4), td:nth-child(5), td:nth-child(6), td:nth-child(7), td:nth-child(8) {
+  text-align: center;
+}
+*/
+
+/* BBG added to make certain tds look like links */
+.link {
+  color: #4648ad;
+  text-decoration: underline;
+  font-weight: 100;
+}
+
+.link:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 150%;
+  text-align: center;
+  /*  BBG added to center icons */
+}
+
+input,
+label {
+  display: block;
+}
+
+.editField {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.labelAndInput {
+  display: inline-block
+}
+
+.navbarheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border: 1px solid black;
+  position: relative;
+  background-image: url(./static/PipelineHeader.jpg);
+  background-size: cover;
+  background-position-y: center;
+}
+
+.navbarheader .header-left {
+  margin-left: -0.5rem;
+  flex: 2;
+}
+
+.navbarheader .header-title {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.navbarheader .header-right {
+  margin-right: -0.5rem;
+  flex: 2;
+}
+
+nav {
+  display: inline;
+}
+
+.createCancel {
+  display: flex;
+  justify-content: center;
+  /* BBG added */
+}
+
+.flex-left {
+  margin-right: 100px;
+  /* BBG changed from 200 -> 100px */
+}
+
+.filter {
+  color: #d1dce2;
+  text-align: left;
+  padding-left: 5%;
+}
+
+/*---------BBG Additions-------------*/
+
+/* Center table on page */
+table {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.tableTitle {
+  color: rgb(239, 231, 231);
+  margin-bottom: 10px;
+  font-size: 15pt;
+}
+
+/* Put nav icon on left and allow Header text to be centered */
+.navLeft {
+  flex: 1;
+}
+
+.navRight {
+  flex: 1;
+}
+
+/* Remove bullets from list */
+ul {
+  list-style-type: none;
+}
+
+ol {
+  text-align: center;
+  list-style-position: inside;
+  margin-bottom: 50px;
+}
+
+li {
+  padding-bottom: 5px;
+  color: #9cb1bc;
+
+}
+
+p {
+  font-weight: bold;
+}
+
+/* Header home page icon */
+.imgClass {
+  padding: 2px;
+  /*border: 3px solid #032536;*/
+  /*background-color: #27556C;*/
+  opacity: 0.97;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+
+.hdrText {
+  color: #6E91A1;
+}
+
+/* Links to other pages */
+.Header-nav a:hover {
+  color: #4e5194;
+}
+
+.Header-nav a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  background-color: #6E91A1;
+  /* color: #032536; */
+  color: #d1dce2;
+  padding: 5px;
+  margin: 2px;
+  text-align: left;
+  border: #0d6985 line;
+  border: 2px solid #98a5c0;
+  /* text-transform: uppercase;  */
+}
+
+/* Filter search bar */
+.Filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FilterText {
+  color: #d1dce2;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+#tankNameFilter {
+  height: 20px;
+}

@@ -1,0 +1,179 @@
+//Replace instances of this id:
+//With this id:
+
+### Request 1: Retrieve should return Tanks in the database
+GET http://flip1.engr.oregonstate.edu:59021/tanks HTTP/1.1
+
+### Request 2: Retrieve should return TankTypes in the database
+GET http://flip1.engr.oregonstate.edu:59021/TankTypes HTTP/1.1
+
+### Request 3: Retrieve should return Tasks in the database
+GET http://flip1.engr.oregonstate.edu:59021/Tasks HTTP/1.1
+
+### Request 4: Retrieve should return Lineups in the database
+GET http://flip1.engr.oregonstate.edu:59021/Lineups HTTP/1.1
+
+### Request 5: Retrieve should return Materials in the database
+GET http://flip1.engr.oregonstate.edu:59021/Materials HTTP/1.1
+
+### Request 6: Retrieve should return Tests in the database
+GET http://flip1.engr.oregonstate.edu:59021/Tests HTTP/1.1
+
+### Request 7: Retrieve should return Specifications in the database
+GET http://flip1.engr.oregonstate.edu:59021/Specifications HTTP/1.1
+
+### Request 1: Create a tank
+POST http://flip1.engr.oregonstate.edu:59021/tanks HTTP/1.1
+content-type: application/json
+
+{
+    "tankName": "T202",
+    "tankTypeID": 13,
+    "pumpableVol": 44000.0,
+    "capacity": 80000.0,
+    "srcOrDest": "source",
+    "materialID": 15
+}
+
+### Request 2: Create a tankType
+POST http://flip1.engr.oregonstate.edu:59021/tankTypes HTTP/1.1
+content-type: application/json
+
+{
+    "tankTypeName": "Brick"
+}
+
+### Request 3: Create a task
+POST http://flip1.engr.oregonstate.edu:59021/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "taskVolume": 33000.0
+}
+
+### Request 4: Create a lineup
+POST http://flip1.engr.oregonstate.edu:59021/lineups HTTP/1.1
+content-type: application/json
+
+{
+    "taskID": 12,
+    "tankID": 15
+}
+
+### Request 5: Create a material
+POST http://flip1.engr.oregonstate.edu:59021/materials HTTP/1.1
+content-type: application/json
+
+{
+    "materialName": "Dirty Gas Oil"
+}
+
+### Request 6: Create a test
+POST http://flip1.engr.oregonstate.edu:59021/tests HTTP/1.1
+content-type: application/json
+
+{
+    "testNumber": "D9999",
+    "testName": "A Test",
+    "testDescription": "Test of POST"
+}
+
+### Request 7: Create a specification
+POST http://flip1.engr.oregonstate.edu:59021/specifications HTTP/1.1
+content-type: application/json
+
+{
+    "maxLimit": 1.2,
+    "minLimit": 0.8,
+    "testID": 14,
+    "materialID": 17
+}
+
+### Request 1: Update a tank
+PUT http://flip1.engr.oregonstate.edu:59021/tanks/16 HTTP/1.1
+content-type: application/json
+
+{
+    "tankName": "T404",
+    "tankTypeID": 13,
+    "pumpableVol": 33333.0,
+    "capacity": 90000.0,
+    "srcOrDest": "source",
+    "materialID": 15
+}
+
+### Request 2: Update a tankType
+PUT http://flip1.engr.oregonstate.edu:59021/tankTypes/18 HTTP/1.1
+content-type: application/json
+
+{
+    "tankTypeName": "Plastic"
+}
+
+### Request 3: Update a task
+PUT http://flip1.engr.oregonstate.edu:59021/tasks/14 HTTP/1.1
+content-type: application/json
+
+{
+    "taskVolume": 15000.0
+}
+
+### Request 4: Update a lineup
+PUT http://flip1.engr.oregonstate.edu:59021/lineups/22 HTTP/1.1
+content-type: application/json
+
+{
+    "taskID": 13,
+    "tankID": 15
+}
+
+### Request 5: Update a material
+PUT http://flip1.engr.oregonstate.edu:59021/materials/18 HTTP/1.1
+content-type: application/json
+
+{
+    "materialName": "Paraxylene"
+}
+
+### Request 6: Update test
+PUT http://flip1.engr.oregonstate.edu:59021/tests/18 HTTP/1.1
+content-type: application/json
+
+{
+    "testNumber": "D1111",
+    "testName": "B Test",
+    "testDescription": "Test of PUT"
+}
+
+### Request 7: Update a specification
+PUT http://flip1.engr.oregonstate.edu:59021/specifications/19 HTTP/1.1
+content-type: application/json
+
+{
+    "maxLimit": 1.1,
+    "minLimit": 0.1,
+    "testID": 14,
+    "materialID": 17
+}
+
+### Request 1: Delete tank
+DELETE http://flip1.engr.oregonstate.edu:59021/Tanks/16 HTTP/1.1
+
+### Request 2: Delete tankType
+DELETE http://flip1.engr.oregonstate.edu:59021/TankTypes/18 HTTP/1.1
+
+### Request 3: Delete task
+DELETE http://flip1.engr.oregonstate.edu:59021/Tasks/14 HTTP/1.1
+
+### Request 4: Delete lineup
+DELETE http://flip1.engr.oregonstate.edu:59021/Lineups/22 HTTP/1.1
+
+### Request 5: Delete material
+DELETE http://flip1.engr.oregonstate.edu:59021/Materials/18 HTTP/1.1
+
+### Request 6: Delete test
+DELETE http://flip1.engr.oregonstate.edu:59021/Tests/18 HTTP/1.1
+
+### Request 7: Delete specification
+DELETE http://flip1.engr.oregonstate.edu:59021/Specifications/19 HTTP/1.1
+

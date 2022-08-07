@@ -1,0 +1,202 @@
+//Replace instances of this id:
+//With this id:
+
+### Request 1: Retrieve should return Tanks in the database
+GET https://bomb-mysql.herokuapp.com/Tanks HTTP/1.1
+
+### Request 2: Retrieve should return TankTypes in the database
+GET https://bomb-mysql.herokuapp.com/TankTypes HTTP/1.1
+
+### Request 3: Retrieve should return Tasks in the database
+GET https://bomb-mysql.herokuapp.com/Tasks HTTP/1.1
+
+### Request 4: Retrieve should return Lineups in the database
+GET https://bomb-mysql.herokuapp.com/Lineups HTTP/1.1
+
+### Request 5: Retrieve should return Materials in the database
+GET https://bomb-mysql.herokuapp.com/Materials HTTP/1.1
+
+### Request 6: Retrieve should return Tests in the database
+GET https://bomb-mysql.herokuapp.com/Tests HTTP/1.1
+
+### Request 7: Retrieve should return Specifications in the database
+GET https://bomb-mysql.herokuapp.com/Specifications HTTP/1.1
+
+### Request 1: Create a tank
+POST https://bomb-mysql.herokuapp.com/Tanks HTTP/1.1
+content-type: application/json
+
+{
+    "tankName": "T202",
+    "tankTypeID": 13,
+    "pumpableVol": 44000.0,
+    "capacity": 80000.0,
+    "srcOrDest": "source",
+    "materialID": 15
+}
+
+### Request 2: Create a tankType
+POST https://bomb-mysql.herokuapp.com/TankTypes HTTP/1.1
+content-type: application/json
+
+{
+    "tankTypeName": "Brick"
+}
+
+### Request 3: Create a task
+POST https://bomb-mysql.herokuapp.com/Tasks HTTP/1.1
+content-type: application/json
+
+{
+    "taskVolume": 33000.0
+}
+
+### Request 4: Create a lineup
+POST https://bomb-mysql.herokuapp.com/Lineups HTTP/1.1
+content-type: application/json
+
+{
+    "taskID": 12,
+    "tankID": 15
+}
+
+### Request 5: Create a material
+POST https://bomb-mysql.herokuapp.com/Materials HTTP/1.1
+content-type: application/json
+
+{
+    "materialName": "Dirty Gas Oil"
+}
+
+### Request 6: Create a test
+POST https://bomb-mysql.herokuapp.com/Tests HTTP/1.1
+content-type: application/json
+
+{
+    "testNumber": "D99998",
+    "testName": "A Test",
+    "testDescription": "Test of POST"
+}
+
+### Request 7: Create a specification
+POST https://bomb-mysql.herokuapp.com/Specifications HTTP/1.1
+content-type: application/json
+
+{
+    "maxLimit": 1.2,
+    "minLimit": 0.8,
+    "testID": 14,
+    "materialID": 17
+}
+
+### Request 1: Update a tank
+PUT https://bomb-mysql.herokuapp.com/Tanks/184 HTTP/1.1
+content-type: application/json
+
+{
+    "tankName": "Test tanks",
+    "tankTypeID": 17,
+    "pumpableVol": 33333.0,
+    "capacity": 90000.0,
+    "srcOrDest": "source",
+    "materialID": 11
+}
+
+### Request 2: Update a tankType
+PUT https://bomb-mysql.herokuapp.com/TankTypes/17 HTTP/1.1
+content-type: application/json
+
+{
+    "tankTypeName": "Plastic"
+}
+
+### Request 3: Update a task
+PUT https://bomb-mysql.herokuapp.com/Tasks/14 HTTP/1.1
+content-type: application/json
+
+{
+    "taskVolume": 15000.0
+}
+
+### Request 4: Update a lineup
+PUT https://bomb-mysql.herokuapp.com/lineups/24 HTTP/1.1
+content-type: application/json
+
+{
+    "taskID": 11,
+    "tankID": 15
+}
+
+### Request 5: Update a material
+PUT https://bomb-mysql.herokuapp.com/materials/24 HTTP/1.1
+content-type: application/json
+
+{
+    "materialName": "Paraxylene"
+}
+
+### Request 6: Update test
+PUT https://bomb-mysql.herokuapp.com/Tests/34 HTTP/1.1
+content-type: application/json
+
+{
+    "testNumber": "D99988",
+    "testName": "B Test",
+    "testDescription": "Test of PUT"
+}
+
+### Request 7: Update a specification
+PUT https://bomb-mysql.herokuapp.com/Specifications/24 HTTP/1.1
+content-type: application/json
+
+{
+    "maxLimit": 1.1,
+    "minLimit": 0.1,
+    "testID": 14,
+    "materialID": 17
+}
+
+### Request 1: Delete tank
+DELETE https://bomb-mysql.herokuapp.com/Tanks/24 HTTP/1.1
+
+### Request 2: Delete tankType
+### This breaks Heroku... need to restart all dynos to fix within Heroku website
+DELETE https://bomb-mysql.herokuapp.com/TankTypes/17 HTTP/1.1
+
+### Request 3: Delete task
+DELETE https://bomb-mysql.herokuapp.com/Tasks/14 HTTP/1.1
+
+### Request 4: Delete lineup
+DELETE https://bomb-mysql.herokuapp.com/Lineups/22 HTTP/1.1
+
+### Request 5: Delete material
+DELETE https://bomb-mysql.herokuapp.com/Materials/18 HTTP/1.1
+
+### Request 6: Delete test
+DELETE https://bomb-mysql.herokuapp.com/Tests/18 HTTP/1.1
+
+### Request 7: Delete specification
+DELETE https://bomb-mysql.herokuapp.com/Specifications/19 HTTP/1.1
+
+// Tests of Stored Procedures
+### Request 1: Retrieve should return Tanks in the database
+GET https://bomb-mysql.herokuapp.com/tanksInfo HTTP/1.1
+
+### Request 2: Retrieve should return TankTypes in the database
+GET https://bomb-mysql.herokuapp.com/tankTypesInfo HTTP/1.1
+
+### Request 3: Retrieve should return Tasks in the database
+GET https://bomb-mysql.herokuapp.com/tasksInfo HTTP/1.1
+
+### Request 4: Retrieve should return Lineups in the database
+GET https://bomb-mysql.herokuapp.com/lineupsInfo HTTP/1.1
+
+### Request 5: Retrieve should return Materials in the database
+GET https://bomb-mysql.herokuapp.com/materialsInfo HTTP/1.1
+
+### Request 6: Retrieve should return Tests in the database
+GET https://bomb-mysql.herokuapp.com/testsInfo HTTP/1.1
+
+### Request 7: Retrieve should return Specifications in the database
+GET https://bomb-mysql.herokuapp.com/specificationsInfo HTTP/1.1
+
